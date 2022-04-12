@@ -13,6 +13,10 @@ main {
     margin: auto;
 }
 
+h2 {
+    font-size: 25px;
+}
+
  /********** Header **********/
 
 .header-container {
@@ -28,7 +32,7 @@ main {
 
 .header-container h1 {
     color: #94ffe6;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .div-header {
@@ -92,7 +96,7 @@ main {
 
 .about-me-section h1 {
     color: #ccd6f6;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 
@@ -193,6 +197,12 @@ main {
 @media (min-width:768px) {
     .skills-ul li img{
         width: 150px;
+    }
+    .about-me-section h1 {
+        font-size: 60px;
+    }
+    .header-container h1 {
+        font-size: 50px;
     }
     .projects-art {
         width: 40%;
