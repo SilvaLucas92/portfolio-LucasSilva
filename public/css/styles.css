@@ -6,6 +6,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #0a192f;
     color: #8892b0;
+    padding-top: 120px;
 }
 
 main {
@@ -30,6 +31,7 @@ h2 {
     z-index:999;
 }
 
+
 .header-container h1 {
     color: #94ffe6;
     font-size: 40px;
@@ -39,7 +41,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 0 20px;
+    padding: 20px 10px 0 10px;
     width: 80%;
     margin: auto;
 }
@@ -57,6 +59,7 @@ h2 {
     border-radius: 10%;
     font-size: 25px;
     cursor: pointer;
+    padding: 5px;
 }
 
 .ul-nav {
@@ -90,25 +93,47 @@ h2 {
 /********About me*****/
 
 .about-me-section {
-    margin-top: 250px;
     text-align: center;
 }
 
-.about-me-section h1 {
-    color: #ccd6f6;
-    font-size: 40px;
+.contenedor-title {
+	margin: auto;
+	display: table;
 }
 
+.contenedor-title h1 {
+    color: #ccd6f6;
+    font-size: 40px;
+    position: relative; 
+	float: left;
+    background: #0a192f;
+}
+
+.el-span {
+    background: #0a192f;
+    position:absolute;
+    right:0;
+    width:0;
+    border-left: 2px solid #94ffe6;
+    animation: escribir 6s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
 
 .about-me-section img {
     border-radius: 50%;
-    width: 70%;
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
+    margin: auto;
 }
 
 .about-me-art {
-    text-align: left;
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
 }
 .about-me-art p {
     font-size: 15px;
@@ -118,13 +143,26 @@ h2 {
 .div-links a {
     color: #94ffe6;
     font-size: 30px;
+    padding: 15px;
+    position: relative;
+}
+
+.div-links a:hover i{
+    transform: rotate(-90deg);
+}
+
+.div-divisor {
+    border: solid 2px #94ffe6;
+    margin: 150px 0px 150px 0px;
+    background-color: #94ffe6;
 }
 
 /***********Skills***********/
 
 .skill-div {
-    text-align: left;
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
+    /* margin-top: 50px; */
 }
 
 .skills-ul {
@@ -144,8 +182,8 @@ h2 {
 /***********projects*******/
 
 .projects-section {
-    text-align: left;
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
 }
 
 .all-art {
@@ -158,9 +196,10 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     margin: 40px 20px 20px 20px;
-    width: 70%;
+    width: 100%;
+    max-width: 350px;
     -webkit-box-shadow: 2px 1px 6px 10px rgba(195, 180, 230, 0.301); 
     box-shadow: 2px 1px 6px 10px rgba(219, 199, 255, 0.4);
 }
@@ -195,51 +234,94 @@ h2 {
 }
 
 @media (min-width:768px) {
+    body{
+        padding-top: 150px;
+    }
     .skills-ul li img{
         width: 150px;
     }
-    .about-me-section h1 {
-        font-size: 60px;
+    .contenedor-title h1 {
+        font-size: 80px;
     }
     .header-container h1 {
         font-size: 50px;
     }
     .projects-art {
         width: 40%;
+        max-width: 450px;
     }
     .nav-bar span {
         font-size: 25px;
     }
-    .ul-nav li {
-        font-size: 18px;
+    .ul-nav li a{
+        font-size: 22px;
     }
-    .about-me-art p {
-        font-size: 18px;
-    }
+
     .div-links a {
-        font-size: 35px;
+        font-size: 45px;
     }
     .about-me-art p {
-        font-size: 18px;
+        font-size: 22px;
     }
-    h2 {
-        font-size: 30px;
-    }
+
     .about-me-section h1 {
         font-size: 70px;
     }
-    .about-me-section {
-        margin-top: 350px;
+    .about-me-section img {
+        max-width: 450px;
+    }
+    .skill-div {
+        margin-top: 150px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .art-text a {
+        font-size: 20px;
+    }
+    .art-text p {
+        font-size: 18px;
+    }
+    .footer-lucas p {
+        font-size: 30px;
     }
 }
 @media (min-width:1200px) {
+    .ul-nav li a{
+        font-size: 25px;
+    }
     .projects-art {
         width: 35%;
     }
     .about-me-art p {
+        font-size: 28px;
+    }
+    .contenedor-title h1 {
+        font-size: 110px;
+    }
+    .div-links a {
+        font-size: 50px;
+    }
+    .about-me-section img {
+        max-width: 500px;
+    }
+    body{
+        padding-top: 180px;
+    }
+    .nav-bar span {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+    .art-text a {
+        font-size: 22px;
+    }
+    .art-text p {
         font-size: 20px;
     }
-    .about-me-section h1 {
-        font-size: 80px;
+    .footer-lucas p {
+        font-size: 32px;
     }
 }

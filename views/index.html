@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <title> Lucas Silva | Full Stack Web Developer </title>
+    <link rel="icon" href="/images/icon.png">
+</head>
+<body>
+    <header class="header-container">
+        <div class="div-header">
+        <h1> &lt; LS /&gt; </h1>
+        <nav class="nav-bar">
+            <div class="toggle-btn">
+                <span id="btn-hamburguer">
+                    &#9776;
+                </span>
+            </div>
+            <ul class="ul-nav">
+                <li><a class="nav-a" href="#about-me">About Me </a></li>
+                <li><a class="nav-a" href="#skills">Skills </a></li>
+                <li><a class="nav-a" href="#projects">Projects </a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section class="about-me-section" >
+            <img src="/images/yoy.jpg" alt="Lucas-foto-cv">
+            <div class="contenedor-title">
+                <h1 > Lucas Silva. <span class="el-span"> &#160;</span></h1>
+            </div>
+            <h2>Full Stack Web Developer.</h2>
+            <div class="div-links">
+                <h2> Contact Me </h2>
+                <a href="https://github.com/SilvaLucas92" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/lucas-silva-b99518216"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <div  id="about-me" class="div-divisor"></div>
+            <article class="about-me-art">
+                <h2>About Me</h2>
+                <p>
+                Hola! Mi nombre es Lucas y vivo en Buenos Aires. Termine la certificacion de FullStack Web Developer en Digital House y actualmente me desempeño como React Developer en Ernst & Young. En mis ratos libres (ademas de tocar la guitarra) trabajo en mis propios proyectos para profundizar mis conocimientos y sumar nuevos. Ahora que ya me conociste un poco, te invito a que mires algunos de mis proyectos.
+                </p>
+            </article >
+        </section>
+        <div  id="skills" class="div-divisor"></div>
+        <div  class="skill-div">    
+            <h2>Skills</h2>
+            <ul class="skills-ul" > 
+                <li><img src="/images/aa.webp" alt="css"></li>
+                <li><img src="/images/html2.png" alt="html"></li>
+                <li><img src="/images/descarga.png" alt="nodejs"></li>
+                <li><img src="/images/Javascript_Logo.png" alt="js"></li>
+                <li><img src="/images/my1.png" alt="mysql"></li>
+                <li><img src="/images/github.png" alt="github"></li>
+                <li><img src="/images/atom.png" alt="react"></li>
+            </ul>
+        </div>
+        <div  id="projects" class="div-divisor"></div>
+        <section class="projects-section" >
+            <h2>Projects</h2>
+            <div class="all-art">
+                <article class="projects-art">
+                    <a href="https://github.com/SilvaLucas92/github-profile">
+                    <img src="/images/github-profile.jpg" alt="">
+                    <div class="art-text">
+                        <h3>GitHub Profiles</h3>
+                        <p>Buscador de  perfiles de github hecho con JS.</p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://github.com/SilvaLucas92/Q-A-react">
+                    <img src="/images/qa.jpg" alt="">
+                    <div class="art-text"> 
+                        <h3>Q&A React Project</h3>
+                        <p>Proyecto de React usando Hooks.</p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://github.com/SilvaLucas92/tours-react">
+                    <img src="/images/tours.jpg" alt="">
+                    <div class="art-text">
+                        <h3>Tours API - React project</h3>
+                        <p>Proyecto de React usando Hooks(useState, useEffect).</p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://crud-project-viena.herokuapp.com/">
+                    <img src="/images/crud.png" alt="">
+                    <div class="art-text"> 
+                        <h3>CRUD Project</h3>
+                        <p>Projecto hecho con ExpressJS en el cual podes crear, actualizar y borrar productos (CRUD). La base de datos esta creada con un archivo JSON.</p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://login-register-process.herokuapp.com/">
+                    <img src="/images/login.png" alt="">
+                    <div class="art-text">
+                        <h3>Login-Register Project</h3>
+                        <p>Realizado con ExpressJS, este proyecto te permite registrarte como usuario luego poder loguearte y redirigirte a la pagina principal. </p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://github.com/SilvaLucas92/movie-api">
+                    <img src="/images/movie.jpg" alt="">
+                    <div class="art-text"> 
+                        <h3>Movie API</h3>
+                        <p>Utilizando una API de peliculas, las listamos y ademas existe la posibilidad de buscarlas.</p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://github.com/SilvaLucas92/to-do-list">
+                    <img src="/images/tareas.png" alt="">
+                    <div class="art-text"> 
+                        <h3>Lista de Tareas pendientes</h3>
+                        <p>Proyecto que te permite listar las tareas pendientes y en el caso de terminarlas, tacharlas y con un doble click eliminarlas.</p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://github.com/SilvaLucas92/react-dashboard">
+                    <img src="/images/maison-react.png" alt="">
+                    <div class="art-text"> 
+                        <h3>Dashboard React</h3>
+                        <p>Dashboard realizado en React para el Bootcamp de Digital House. Esta consumiendo una API del proyecto integrador.</p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://github.com/SilvaLucas92/grupo_8_le_maison">
+                    <img src="/images/maison.png" alt="">
+                    <div class="art-text"> 
+                        <h3>E-commerce</h3>
+                        <p>Proyecto integrador para Digital House. Se realizo un E-commerce completo.</p>
+                    </a>
+                    </div>
+                </article>
+                <article class="projects-art">
+                    <a href="https://github.com/SilvaLucas92/calculadora-js">
+                    <img src="/images/calculadora.png" alt="">
+                    <div class="art-text"> 
+                        <h3>Calculadora</h3>
+                        <p>Realizado con JavaScript, permite realizar todas las operaciones basicas de una calculadora.</p>
+                    </a>
+                    </div>
+                </article>
+            </div>    
+        </section>
+    </main>
+    <footer class="footer-lucas"> <p> Lucas Silva - 2022 <i class='bx bx-copyright'> </i> </p>
+    </footer>
+</body>
+<script src="/js/main.js"></script>
+</html>
